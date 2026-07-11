@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>GymManagerPro Key Generator</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #0f172a;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            padding: 1.5rem;
+        }
+
+        .card {
+            background: #1e293b;
+            border-radius: 2rem;
+            padding: 2.5rem 2.2rem;
+            max-width: 780px;
+            width: 100%;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
+            border: 1px solid #334155;
+            transition: all 0.2s ease;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #fbbf24;
+            color: #0f172a;
+            font-weight: 700;
+            font-size: 0.7rem;
+            letter-spacing: 0.04em;
+            padding: 0.25rem 1rem;
+            border-radius: 40px;
+            text-transform: uppercase;
+            margin-bottom: 1.25rem;
+            border: 1px solid #fcd34d;
+        }
+
+        h1 {
+            color: #f8fafc;
+            font-weight: 700;
+            font-size: 2rem;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .subhead {
+            color: #94a3b8;
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+            border-left: 3px solid #3b82f6;
+            padding-left: 1rem;
+            font-weight: 400;
+        }
+
+        .form-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .field {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+
+        .field label {
+            color: #cbd5e1;
+            font-weight: 500;
+            font-size: 0.9rem;
+            letter-spacing: 0.01em;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .field label span {
+            background: #334155;
+            color: #94a3b8;
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 0.1rem 0.6rem;
+            border-radius: 30px;
+        }
+
+        .field input, .field select {
+            background: #0f172a;
+            border: 1px solid #334155;
+            border-radius: 14px;
+            padding: 0.75rem 1rem;
+            color: #f1f5f9;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: 0.15s ease;
+            outline: none;
+            width: 100%;
+        }
+
+        .field input:focus, .field select:focus {
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+        }
+
+        .field input::placeholder {
+            color: #475569;
+            font-weight: 400;
+        }
+
+        .inline-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .inline-group .field {
+            flex: 1 1 0;
+            min-width: 120px;
+        }
+
+        .btn {
+            background: #3b82f6;
+            border: none;
+            border-radius: 60px;
+            padding: 0.9rem 1.8rem;
+            font-weight: 600;
+            font-size: 1rem;
+            color: white;
+            cursor: pointer;
+            transition: 0.15s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            border: 1px solid #60a5fa;
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+            width: 100%;
+        }
+
+        .btn:hover {
+            background: #2563eb;
+            transform: scale(1.01);
+            box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        .btn-secondary {
+            background: #1e293b;
+            border: 1px solid #475569;
+            box-shadow: none;
+        }
+
+        .btn-secondary:hover {
+            background: #334155;
+            border-color: #64748b;
+        }
+
+        .keys-output {
+            background: #0f172a;
+            border-radius: 1.5rem;
+            padding: 1.5rem 1.2rem;
+            margin: 1.8rem 0 1.2rem 0;
+            border: 1px solid #2d3a52;
+        }
+
+        .keys-output .label {
+            color: #94a3b8;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .key-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            max-height: 280px;
+            overflow-y: auto;
+            padding-right: 0.3rem;
+        }
+
+        .key-list::-webkit-scrollbar {
+            width: 4px;
+        }
+        .key-list::-webkit-scrollbar-track {
+            background: #1e293b;
+            border-radius: 10px;
+        }
+        .key-list::-webkit-scrollbar-thumb {
+            background: #3b82f6;
+            border-radius: 10px;
+        }
+
+        .key-item {
+            background: #1a2539;
+            padding: 0.7rem 1rem;
+            border-radius: 12px;
+            font-family: 'JetBrains Mono', 'Fira Code', monospace;
+            font-size: 0.9rem;
+            color: #e2e8f0;
+            letter-spacing: 0.02em;
+            border-left: 3px solid #3b82f6;
+            word-break: break-all;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .key-item .copy-btn {
+            background: transparent;
+            border: 1px solid #475569;
+            color: #94a3b8;
+            border-radius: 8px;
+            padding: 0.2rem 0.7rem;
+            font-size: 0.7rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.1s ease;
+            font-family: inherit;
+            flex-shrink: 0;
+            margin-left: 0.8rem;
+        }
+
+        .key-item .copy-btn:hover {
+            background: #3b82f6;
+            border-color: #3b82f6;
+            color: white;
+        }
+
+        .empty-keys {
+            color: #475569;
+            font-style: italic;
+            text-align: center;
+            padding: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+
+        .actions {
+            display: flex;
+            gap: 0.8rem;
+            flex-wrap: wrap;
+            margin-top: 0.5rem;
+        }
+
+        .actions .btn {
+            flex: 1;
+            min-width: 120px;
+        }
+
+        .toast {
+            background: #1e293b;
+            border: 1px solid #3b82f6;
+            color: #e2e8f0;
+            padding: 0.7rem 1.2rem;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            opacity: 0;
+            transition: opacity 0.25s ease;
+            pointer-events: none;
+        }
+
+        .toast.show {
+            opacity: 1;
+        }
+
+        .footer-note {
+            margin-top: 1.8rem;
+            color: #475569;
+            font-size: 0.75rem;
+            border-top: 1px solid #283548;
+            padding-top: 1.2rem;
+            text-align: center;
+        }
+
+        .footer-note code {
+            background: #1e293b;
+            padding: 0.2rem 0.6rem;
+            border-radius: 8px;
+            color: #94a3b8;
+            font-size: 0.7rem;
+        }
+
+        @media (max-width: 480px) {
+            .card { padding: 1.5rem; }
+            h1 { font-size: 1.6rem; }
+            .inline-group { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="badge">🔐 developer tool</div>
+    <h1>
+        <span>⚙️ Key Generator</span>
+        <span style="font-size: 0.9rem; font-weight: 400; color: #94a3b8; letter-spacing: 0;">GymManagerPro</span>
+    </h1>
+    <div class="subhead">
+        Generate valid activation keys &mdash; all processing happens in your browser.
+        <span style="color: #64748b; display: inline-block; margin-left: 0.5rem;">(no server)</span>
+    </div>
+
+    <div class="form-grid">
+        <div class="inline-group">
+            <div class="field">
+                <label>🔢 Count <span>keys</span></label>
+                <input type="number" id="keyCount" value="1" min="1" max="100" />
+            </div>
+            <div class="field">
+                <label>⏱️ Amount <span>validity</span></label>
+                <input type="number" id="validityAmount" value="30" min="1" />
+            </div>
+            <div class="field">
+                <label>📆 Unit</label>
+                <select id="validityUnit">
+                    <option value="minutes">Minutes</option>
+                    <option value="hours">Hours</option>
+                    <option value="days" selected>Days</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <button class="btn" id="generateBtn">✨ Generate Keys</button>
+
+    <div class="keys-output" id="keysOutput">
+        <div class="label">
+            <span>📋 generated keys</span>
+            <span id="keyCountLabel">0 keys</span>
+        </div>
+        <div id="keyListContainer" class="key-list">
+            <div class="empty-keys">No keys generated yet.</div>
+        </div>
+        <div class="actions">
+            <button class="btn btn-secondary" id="copyAllBtn" style="flex:2;">📄 Copy all</button>
+            <button class="btn btn-secondary" id="saveFileBtn" style="flex:2;">💾 Save .txt</button>
+        </div>
+        <div id="toastMessage" class="toast">✓ Copied!</div>
+    </div>
+
+    <div class="footer-note">
+        ⚠️  Never ship this tool to clients. Only the <code>main.py</code> / <code>.exe</code> should be distributed.
+    </div>
+</div>
+
+<script>
+    (function() {
+        "use strict";
+
+        // ----- constants (mirror Python logic) -----
+        // IMPORTANT: Must match SECRET_KEY in config.py
+        const SECRET_KEY = new TextEncoder().encode("CHANGE-ME-TO-A-LONG-RANDOM-SECRET-1f8a3c9d7e2b4a10");
+        const PAYLOAD_STRUCT = ">II"; // 2 x uint32 (validity_seconds, nonce)
+        const SIG_LEN = 6;
+
+        const UNIT_SECONDS = {
+            minutes: 60,
+            hours: 3600,
+            days: 86400
+        };
+
+        // ----- Base32 encoding (RFC 4648) -----
+        function base32Encode(data) {
+            const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ234567";
+            let bits = 0;
+            let value = 0;
+            let output = "";
+
+            for (let i = 0; i < data.length; i++) {
+                value = (value << 8) | data[i];
+                bits += 8;
+                while (bits >= 5) {
+                    output += alphabet[(value >>> (bits - 5)) & 31];
+                    bits -= 5;
+                }
+            }
+            if (bits > 0) {
+                output += alphabet[(value << (5 - bits)) & 31];
+            }
+            return output;
+        }
+
+        // ----- crypto helpers -----
+        async function hmacSha256(key, message) {
+            const cryptoKey = await crypto.subtle.importKey(
+                "raw",
+                key,
+                { name: "HMAC", hash: "SHA-256" },
+                false,
+                ["sign"]
+            );
+            const sig = await crypto.subtle.sign("HMAC", cryptoKey, message);
+            return new Uint8Array(sig);
+        }
+
+        function uint32ToBytes(val) {
+            const buf = new ArrayBuffer(4);
+            new DataView(buf).setUint32(0, val, false); // big-endian
+            return new Uint8Array(buf);
+        }
+
+        function concatUint8Arrays(a, b) {
+            const result = new Uint8Array(a.length + b.length);
+            result.set(a, 0);
+            result.set(b, a.length);
+            return result;
+        }
+
+        // ----- key generation (mirrors Python exactly) -----
+        async function generateKey(validitySeconds) {
+            // 4 bytes validity_seconds (uint32, big-endian)
+            const validityBytes = uint32ToBytes(validitySeconds);
+
+            // 4 bytes nonce (random uint32, big-endian)
+            const nonce = crypto.getRandomValues(new Uint32Array(1))[0];
+            const nonceBytes = uint32ToBytes(nonce);
+
+            // payload = validity + nonce
+            const payload = concatUint8Arrays(validityBytes, nonceBytes);
+
+            // HMAC-SHA256 signature, take first SIG_LEN (6) bytes
+            const fullSig = await hmacSha256(SECRET_KEY, payload);
+            const sig = fullSig.slice(0, SIG_LEN);
+
+            // raw = payload + sig
+            const raw = concatUint8Arrays(payload, sig);
+
+            // Base32 encode WITHOUT padding (matches Python's b32encode(...).rstrip("="))
+            let b32 = base32Encode(raw);
+            b32 = b32.replace(/=+$/, ''); // remove any padding
+
+            // Group into blocks of 4 separated by dashes (like Python)
+            const groups = [];
+            for (let i = 0; i < b32.length; i += 4) {
+                groups.push(b32.substring(i, i + 4));
+            }
+            return groups.join("-");
+        }
+
+        // ----- UI logic -----
+        const keyCountInput = document.getElementById('keyCount');
+        const validityAmountInput = document.getElementById('validityAmount');
+        const validityUnitSelect = document.getElementById('validityUnit');
+        const generateBtn = document.getElementById('generateBtn');
+        const keyListContainer = document.getElementById('keyListContainer');
+        const keyCountLabel = document.getElementById('keyCountLabel');
+        const copyAllBtn = document.getElementById('copyAllBtn');
+        const saveFileBtn = document.getElementById('saveFileBtn');
+        const toast = document.getElementById('toastMessage');
+
+        let currentKeys = [];
+
+        function renderKeys(keys) {
+            currentKeys = keys;
+            if (!keys || keys.length === 0) {
+                keyListContainer.innerHTML = `<div class="empty-keys">No keys generated yet.</div>`;
+                keyCountLabel.textContent = '0 keys';
+                return;
+            }
+
+            let html = '';
+            keys.forEach((k, idx) => {
+                html += `
+                    <div class="key-item">
+                        <span>${k}</span>
+                        <button class="copy-btn" data-key="${k}" data-idx="${idx}">📋 Copy</button>
+                    </div>
+                `;
+            });
+            keyListContainer.innerHTML = html;
+            keyCountLabel.textContent = `${keys.length} key${keys.length > 1 ? 's' : ''}`;
+
+            // attach copy events to each copy button
+            document.querySelectorAll('.key-item .copy-btn').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    const key = this.getAttribute('data-key');
+                    copyToClipboard(key, `Key ${parseInt(this.getAttribute('data-idx')) + 1} copied`);
+                });
+            });
+        }
+
+        function copyToClipboard(text, successMsg = 'Copied!') {
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(text).then(() => {
+                    showToast(successMsg);
+                }).catch(() => {
+                    fallbackCopy(text, successMsg);
+                });
+            } else {
+                fallbackCopy(text, successMsg);
+            }
+        }
+
+        function fallbackCopy(text, successMsg) {
+            const ta = document.createElement('textarea');
+            ta.value = text;
+            ta.style.position = 'fixed';
+            ta.style.opacity = '0';
+            ta.style.pointerEvents = 'none';
+            document.body.appendChild(ta);
+            ta.select();
+            try {
+                document.execCommand('copy');
+                showToast(successMsg);
+            } catch (e) {
+                showToast('Could not copy');
+            }
+            document.body.removeChild(ta);
+        }
+
+        let toastTimeout = null;
+
+        function showToast(msg) {
+            toast.textContent = msg;
+            toast.classList.add('show');
+            clearTimeout(toastTimeout);
+            toastTimeout = setTimeout(() => {
+                toast.classList.remove('show');
+            }, 2000);
+        }
+
+        // ---- main generation ----
+        async function handleGenerate() {
+            const count = parseInt(keyCountInput.value, 10) || 1;
+            const amount = parseInt(validityAmountInput.value, 10) || 30;
+            const unit = validityUnitSelect.value;
+            const validitySeconds = amount * UNIT_SECONDS[unit];
+
+            if (count < 1) {
+                showToast('Count must be at least 1');
+                return;
+            }
+            if (amount < 1) {
+                showToast('Validity amount must be at least 1');
+                return;
+            }
+            if (count > 200) {
+                showToast('Maximum 200 keys at a time');
+                return;
+            }
+
+            // generate keys sequentially
+            const keys = [];
+            for (let i = 0; i < count; i++) {
+                const k = await generateKey(validitySeconds);
+                keys.push(k);
+            }
+
+            renderKeys(keys);
+            showToast(`Generated ${keys.length} key${keys.length > 1 ? 's' : ''}`);
+        }
+
+        // ---- copy all ----
+        function copyAll() {
+            if (!currentKeys || currentKeys.length === 0) {
+                showToast('No keys to copy');
+                return;
+            }
+            const text = currentKeys.join('\n');
+            copyToClipboard(text, `Copied ${currentKeys.length} keys`);
+        }
+
+        // ---- save as .txt ----
+        function saveToFile() {
+            if (!currentKeys || currentKeys.length === 0) {
+                showToast('No keys to save');
+                return;
+            }
+            const content = currentKeys.join('\n');
+            const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `keys_${new Date().toISOString().slice(0,10)}.txt`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            showToast('File saved');
+        }
+
+        // ---- event binding ----
+        generateBtn.addEventListener('click', handleGenerate);
+
+        copyAllBtn.addEventListener('click', copyAll);
+
+        saveFileBtn.addEventListener('click', saveToFile);
+
+        // Enter key on inputs triggers generate
+        [keyCountInput, validityAmountInput, validityUnitSelect].forEach(el => {
+            el.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter') {
+                    e.preventDefault();
+                    generateBtn.click();
+                }
+            });
+        });
+
+        // ---- prefill with one key on load ----
+        window.addEventListener('DOMContentLoaded', () => {
+            handleGenerate();
+        });
+
+    })();
+</script>
+
+</body>
+</html>
