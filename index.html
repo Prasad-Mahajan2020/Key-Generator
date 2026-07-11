@@ -319,26 +319,25 @@
 <div class="card">
     <!-- <div class="badge">🔐 developer tool</div> -->
     <h1>
-        <span>⚙️ Key Generator</span>
+        <span>Key Generator</span>
         <span style="font-size: 0.9rem; font-weight: 400; color: #94a3b8; letter-spacing: 0;">GymManagerPro</span>
     </h1>
     <div class="subhead">
-        Generate valid activation keys &mdash; all processing happens in your browser.
-        <span style="color: #64748b; display: inline-block; margin-left: 0.5rem;">(no server)</span>
+        Generate valid activation keys.
     </div>
 
     <div class="form-grid">
         <div class="inline-group">
             <div class="field">
-                <label>🔢 Count <span>keys</span></label>
+                <label>Count<span>keys</span></label>
                 <input type="number" id="keyCount" value="1" min="1" max="100" />
             </div>
             <div class="field">
-                <label>⏱️ Amount <span>validity</span></label>
+                <label>Amount<span>validity</span></label>
                 <input type="number" id="validityAmount" value="30" min="1" />
             </div>
             <div class="field">
-                <label>📆 Unit</label>
+                <label>Unit</label>
                 <select id="validityUnit">
                     <option value="minutes">Minutes</option>
                     <option value="hours">Hours</option>
@@ -348,19 +347,19 @@
         </div>
     </div>
 
-    <button class="btn" id="generateBtn">✨ Generate Keys</button>
+    <button class="btn" id="generateBtn">Generate Keys</button>
 
     <div class="keys-output" id="keysOutput">
         <div class="label">
-            <span>📋 generated keys</span>
+            <span>generated keys</span>
             <span id="keyCountLabel">0 keys</span>
         </div>
         <div id="keyListContainer" class="key-list">
             <div class="empty-keys">No keys generated yet.</div>
         </div>
         <div class="actions">
-            <button class="btn btn-secondary" id="copyAllBtn" style="flex:2;">📄 Copy all</button>
-            <button class="btn btn-secondary" id="saveFileBtn" style="flex:2;">💾 Save .txt</button>
+            <button class="btn btn-secondary" id="copyAllBtn" style="flex:2;">Copy all</button>
+            <button class="btn btn-secondary" id="saveFileBtn" style="flex:2;">Save .txt</button>
         </div>
         <div id="toastMessage" class="toast">✓ Copied!</div>
     </div>
